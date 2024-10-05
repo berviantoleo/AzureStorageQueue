@@ -34,7 +34,7 @@ jobs:
       id-token: write
     strategy:
       matrix:
-        app: ["consumer", "producer"]
+        app: ["Consumer", "Producer"]
 
     steps:
       - name: Checkout repository

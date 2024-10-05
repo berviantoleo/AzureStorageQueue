@@ -1,0 +1,7 @@
+services:
+  consumer:
+    build: ./Consumer
+  producer:
+    build: ./Producer
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite

@@ -1,7 +1,7 @@
 ﻿using Azure.Storage.Queues;
 
 string queueName = "hello-test";
-string connectionString = Environment.GetEnvironmentVariable("QUEUE_CONNECTION_STRING") ?? "DefaultEndpointsProtocol=https;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;QueueEndpoint=http://azurite:10001/devstoreaccount1;";
+string connectionString = Environment.GetEnvironmentVariable("QUEUE_CONNECTION_STRING") ?? "DefaultEndpointsProtocol=https;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;QueueEndpoint=http://localhost:10001/devstoreaccount1;";
 
 // Instantiate a QueueClient to create and interact with the queue
 QueueClient queueClient = new QueueClient(connectionString, queueName);
